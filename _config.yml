@@ -1,39 +1,39 @@
 # Site
 repository: sproogen/resume-theme
-favicon: images/favicon.ico
+favicon: images/graph_icon.png
 
 # Content configuration version
-version: 3
+version: 2
 
 # Personal info
 name: João Araujo Morais
 title: Mestre em Epidemiologia em Saúde Pública
 email: joao.tlp@gmail.com
-website: https://joaohmorais.github.io
+# website: https://joaohmorais.github.io
 
 # Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
 twitter_username: joaoamorais
-github_username:  joaohmorais
+github_username: joaohmorais
 # stackoverflow_username: "00000001"
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
-#instagram_username: joaoamorais
+# instagram_username: joaoamorais
 linkedin_username: joaoamorais
 # xing_username: jekyll
 # pinterest_username: jekyll
-#youtube_username: globalmtb
+# youtube_username: globalmtb
 # googleplus_username: +jekyll
- orcid_username: 0000-0003-3258-1498
+orcid_username: 0000-0003-3258-1498
 
 # Additional icon links
-additional_links:
-- title: itsgoingto.be
-  icon: fas fa-globe
-  url: https://www.itsgoingto.be
+# additional_links:
+# - title: itsgoingto.be
+#   icon: fas fa-globe
+#   url: https://www.itsgoingto.be
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 #   url: Link url (eg. https://google.com)
@@ -45,76 +45,188 @@ additional_links:
 # google_analytics: "UA-00000000-0"
 
 # About Section
-# about_title: About Me
+about_title: Sobre
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
+  Sou o João, sou Bacharel em Ciência da Computação pelo ICT-UNIFESP e Mestre em Epidemiologia em Saúde Pública pela ENSP/Fiocruz. Trabalho bastante com a linguagem <mark>R</mark>: tenho experiência principalmente com o desenvolvimento de aplicações e dashboards em <mark>Shiny</mark> para visualização de dados em saúde e outras áreas. Durante o mestrado, atuei também com manipulação e análise de dados georreferenciados. Atualmente, pesquiso modelagem estatística espacial e temporal de doenças infecciosas sob a perspectiva Bayesiana.
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  Interesses: <mark>R</mark>, <mark>RSpatial</mark>, <mark>R-INLA</mark>, <mark>Spatial Epi</mark>.
 
 content:
-  - title: Projects # Title for the section
+  - title: Projetos # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
-        # link_text: Project Website
+        title: Modelagem espaço-temporal da Covid-19 em São Paulo
+        link: https://www.arca.fiocruz.br/handle/icict/52211
+        # link_text: Publicação do texto de dissertação
         additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
+          - title:  Protocolo de recuperação de dados no GitHub
+            # icon: fab fa-github
+            # url: github.com/joaohmorais
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+          Estudo ecológico realizado com dados do SIVEP-Gripe, para entendimento da distribuição espaço-temporal da Covid-19 em São Paulo e sua relação com fatores socioeconômicos e demográficos.
         description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          Neste trabalho apresentado como projeto de dissertação, foram ajustados modelos estatísticos espaço-temporais utilizando o <mark>R-INLA</mark> para modelagem de casos e óbitos por SRAG-COVID em São Paulo, de março de 2020 a agosto de 2021. O modelo utilizado tem como seu principal diferencial a inclusão de termos de interação espaço-tempo, o que permitiu que o modelo capturasse as especificidades dos diferentes momentos da epidemia ao longo das regiões de saúde do estado. Além disso, investigou-se se a presença de frigoríficos nos municípios acarretou em maiores taxas de incidência e mortalidade por SRAG-COVID, ao controlar por índices socioeconômicos (GeoSES e IVS), e características demográficas.
+      - layout: top-middle
+        title: "<mark>rtabnetsp</mark>: Pacote R para extração de indicadores de saúde"
+        link: https://doi.org/10.1590/S1679-4974202100020
+        # link_text: Publicação do artigo
+        additional_links:
+          - title:  Pacote no GitHub
+            icon: fab fa-github
+            url: https://github.com/joaohmorais/rtabnetsp
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Pacote R disponiblizado no GitHub que possibilita a consulta e recuperação de dados de indicadores de saúde diretamente para o ambiente R.
+        description: | # this will include new lines to allow paragraphs
+          O pacote consulta as páginas da Secretaria do Estado de Saúde (SES/SP) e, através de web scraping, recupera os indicadores disponíveis relativos à Atenção Básica. Dessa forma, o pacote sempre obtém a lista de indicadores mais recente. O usuário pode selecionar o conteúdo e filtros desejados, e os dados relativos à seleção são recuperados e tratados para serem prontamente utilizados em posteriores análises.
+      - layout: top-middle
+        title: VISESP
+        link: https://joaoamorais.shinyapps.io/visesp
+        # link_text: Publicação do artigo
+        additional_links:
+          - title:  Código no GitHub
+            icon: fab fa-github
+            url: https://github.com/joaohmorais/visesp
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Aplicativo <mark>R/Shiny</mark> que possibilita de forma interativa a visualização gráfica de indicadores de saúde no estado de São Paulo.
+        description: | # this will include new lines to allow paragraphs
+          O aplicativo VISESP recupera os indicadores de saúde utilizando o pacote <mark>rtabnetsp</mark> e gera visualizações dos dados selecionados na forma de gráficos de linha, barras, mapas coropléticos e séries temporais. É possível especificar diferentes recortes regionais e unidades de análise. O aplicativo ainda permite o download dos dados já tabulados ou dos gráficos gerados para utilização em relatórios e apresentações. 
+      - layout: top-middle
+        title: Garu Estatística
+        link: https://joaoamorais.shinyapps.io/garu-estatistica
+        # link_text: Publicação do artigo
+        additional_links:
+          - title:  Código no GitHub
+            icon: fab fa-github
+            url: https://github.com/joaohmorais/garu-estatistica
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Aplicativo interativo desenvolvido com o objetivo de auxiliar o ensino da estatística descritiva e noções de probabilidade.
+        description: | # this will include new lines to allow paragraphs
+          Também desenvolvido em <mark>R/Shiny</mark>, o Garu possui fins didáticos e possibilita a exploração de técnicas da estatística descritiva e visualização de dados, além de conter experimentos que abrangem conteúdos de probabilidade e inferência. O usuário pode trabalhar com os dados nativos ou carregar seu próprio conjunto de dados.
 
-  - title: Experience # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Apresentações e palestras
+    layout: list
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
-        quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
-        description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+        title: Congresso de Epidemiologia Abrasco 2021
+        link: https://epi.org.br/programacao/exibe_trabalho.php?id_trabalho=37828&id_atividade=4041&tipo=#topo
+        link_text: Pôster eletrônico
+        caption: 2021
+        # sub_title: Distribuição espaço-temporal da Covid-19 em São Paulo
+        additional_links:
+          - title:  Vídeo
+            icon: fab fa-youtube
+            url: https://epi.org.br/programacao/exibe_trabalho.php?id_trabalho=37828&id_atividade=4041&tipo=#topo
+        description: |
+         #### Distribuição espacial e temporal de hospitalizações e óbitos por SRAG-COVID no estado de São Paulo
+         {: style="text-align: center;"}
 
-  - title: Education # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
+         Autores: João Araujo Morais, Laís Picinini Freitas, Oswaldo Gonçalves Cruz
+         {: style="text-align: center; color:gray;"}
+
+         Foram utilizadas técnicas de suavização espacial, como o estimador Bayesiano Empírico Local, para descrever a distribuição de casos e óbitos por SRAG-COVID entre os municípios e DRS do estado de São Paulo, entre março e dezembro de 2020. Ao observar as séries temporais para cada regional, percebeu-se também o processo de interiorização da doença que ocorreu após o relaxamento das medidas restritivas no estado.
+
+         ![Congresso EPI](/images/epi.jpg){:style="display:block; margin-left:auto; margin-right:auto; width: 520px"}
+
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
-        description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+        title: I satRday São Paulo
+        caption: 2019
+        # sub_title: "rtabnetsp: extração de indicadores de saúde"
+        additional_links:
+          - title:  Apresentações
+            icon: fab fa-github
+            url: https://github.com/satRdays/saopaulo2019_slides
+        description: |
+         #### rtabnetsp: extraindo e tratando dados de saúde no R
+         {: style="text-align: center;"}
+         
+         Autor: João Araujo Morais
+         {: style="text-align: center; color:gray"}
 
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+         Apresentou-se as funcionalidades do pacote `rtabnetsp`, dentre as quais estão envolvidas a busca, seleção e recuperação de dados de indicadores de saúde para São Paulo diretamente no ambiente R. Foi também ilustrado um exemplo de geração de um mapa coroplético utilizando somente funções do pacote.
 
-  - title: A Little More About Me
+          ![satRday](/images/rtabnetsp_169.jpeg){:style="display:block; margin-left:auto; margin-right:auto; width: 520px"} 
+
+  
+  - title: Educação
     layout: text
     content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+      <style>
+        div.left {
+            float: left;
+            width: 50%;
+            margin:0 auto;
+            text-align:center;
+        }
 
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+        div.right {
+            float: right;
+            width: 50%;
+        }
+      </style>
+
+      <div class="left">
+      <h4 style="text-align:center"><b>Fundação Oswaldo Cruz</b></h4>
+      <p style="text-align:center"><b>Mestrado em Epidemiologia em Saúde Pública</b></p>
+      <p style="text-align:center; color:gray">2020-2022</p>
+      <p style="text-align:center; font-style: italic">Área de concentração: Métodos Quantitativos em Epidemiologia</p>
+      <p style="text-align:center"><b>Áreas de interesse:</b> Estudos ecológicos; Epidemiologia espacial; Modelagem estatística espaço-temporal de doenças infecciosas.</p>
+      </div>
+      <div class="right">
+      <h4 style="text-align:center"><b>Universidade Federal de São Paulo</b></h4>
+      <p style="text-align:center"><b>Bacharelado em Ciência da Computação</b></p>
+      <p style="text-align:center"; color:gray>2015-2019</p><br><br>
+      <p style="text-align:center"><b>Áreas de interesse:</b> Aprendizado de máquina e reconhecimento de padrões; Programação concorrente e paralela; Ensino do pensamento computacional.</p>
+      </div>
+
+  - title: Experiência # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: ENSP/Fiocruz
+        # link: boringcompany.com
+        # link_text: boringcompany.com
+        caption: Estatística Aplicada à Epidemiologia II
+        sub_title: Estágio em Docência
+        caption: Setembro 2022 - Dezembro 2022
+        # quote: >
+          # Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+            Atuei como estagiário em docência na disciplina "Estatística Aplicada à Epidemiologia II", que abrange conteúdo de Regressão Linear Simples e Múltipla e Regressão Logística. As atividades envolviam planejamento e acompanhamento das aulas, assim como a realização de sessões de monitoria para dúvidas teóricas e práticas no R. 
+      - layout: left
+        title: Quero Educação
+        # link: boringcompany.com
+        # link_text: boringcompany.com
+        sub_title: Estágio em Website Operations
+        caption: Junho 2019 - Dezembro 2019
+        # quote: >
+          # Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+            Participei do time de Website Operations da empresa Quero Educação, onde éramos responsáveis pela manutenção do banco de dados de ofertas ativas no website. Rotineiramente realizávamos limpeza e manipulação dos dados brutos em Excel para alimentação e/ou atualização do banco de dados.
+  - title: Informações adicionais
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      Local: Mogi das Cruzes, São Paulo.
+      
 
 # Footer
 footer_show_references: true
-# references_title: References on request (Override references text)
+references_title: |
+ <a href = "https://github.com/sproogen/modern-resume-theme" title = "modern-resume-theme">Jekyll theme by: sproogen.</a>
+ <a href="https://www.flaticon.com/free-icons/algorithm" title="algorithm icons">Algorithm icons created by Becris - Flaticon</a>
 
 # Build settings
 remote_theme: sproogen/resume-theme
