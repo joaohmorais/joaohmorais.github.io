@@ -48,7 +48,7 @@ orcid_username: 0000-0003-3258-1498
 about_title: Sobre
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Sou o João, sou Bacharel em Ciência da Computação pelo ICT-UNIFESP e Mestre em Epidemiologia em Saúde Pública pela ENSP/Fiocruz. Trabalho bastante com a linguagem <mark>R</mark>: tenho experiência principalmente com o desenvolvimento de aplicações e dashboards em <mark>Shiny</mark> para visualização de dados em saúde e outras áreas. Durante o mestrado, atuei também com manipulação e análise de dados georreferenciados. Atualmente, pesquiso modelagem estatística espacial e temporal de doenças infecciosas sob a perspectiva Bayesiana.
+  Sou o João, tenho 24 anos, sou Bacharel em Ciência da Computação pelo ICT-UNIFESP e Mestre em Epidemiologia em Saúde Pública pela ENSP/Fiocruz. Trabalho bastante com a linguagem <mark>R</mark>: tenho experiência principalmente com o desenvolvimento de aplicações e dashboards em <mark>Shiny</mark> para visualização de dados em saúde e outras áreas. Durante o mestrado, atuei também com manipulação e análise de dados georreferenciados. Atualmente, pesquiso modelagem estatística espacial e temporal de doenças infecciosas sob a perspectiva Bayesiana.
 
   Interesses: <mark>R</mark>, <mark>RSpatial</mark>, <mark>R-INLA</mark>, <mark>Spatial Epi</mark>.
 
@@ -126,10 +126,10 @@ content:
         link_text: Pôster eletrônico
         caption: 2021
         # sub_title: Distribuição espaço-temporal da Covid-19 em São Paulo
-        additional_links:
-          - title:  Vídeo
-            icon: fab fa-youtube
-            url: https://epi.org.br/programacao/exibe_trabalho.php?id_trabalho=37828&id_atividade=4041&tipo=#topo
+        # additional_links:
+          # - title:  Vídeo
+            # icon: fab fa-youtube
+            # url: https://epi.org.br/programacao/exibe_trabalho.php?id_trabalho=37828&id_atividade=4041&tipo=#topo
         description: |
          #### Distribuição espacial e temporal de hospitalizações e óbitos por SRAG-COVID no estado de São Paulo
          {: style="text-align: center;"}
@@ -219,7 +219,15 @@ content:
   - title: Informações adicionais
     layout: text
     content: | # this will include new lines to allow paragraphs
-      Local: Mogi das Cruzes, São Paulo.
+      #### Idiomas
+      - **Inglês**: Fluente.
+
+      - **Espanhol**: Básico.
+
+      **Local**: Mogi das Cruzes, São Paulo. <br>
+
+      <a href = "https://joaohmorais.github.io" title = "Link para currículo">Link para CV.</a> <br>
+      <a href = "http://lattes.cnpq.br/6029039022037494" title = "Link para lattes">Currículo Lattes.</a>
       
 
 # Footer
